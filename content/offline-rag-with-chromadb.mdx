@@ -1,0 +1,42 @@
+---
+title: "Building an Offline Terminal RAG Engine with ChromaDB and Sentence Transformers"
+publishedAt: "2024-07-20"
+author: "Aditthan J K"
+summary: "How to build a fast, private command-line document retrieval system using local sentence embeddings and ChromaDB vector stores with zero API costs."
+---
+
+Retrieval-Augmented Generation (RAG) has become the gold standard for question-answering over unstructured documents. However, typical tutorials rely heavily on cloud APIs (OpenAI embeddings, Pinecone, Claude). This introduces recurring token expenses, network latency, and data leakage concerns when handling confidential PDFs.
+
+With **RAG-CLI**, we developed a lightweight, terminal-first semantic search engine running 100% locally on personal laptops.
+
+## Pipeline Architecture
+
+The workflow consists of two decoupled stages: **Ingestion** and **Query Retrieval**.
+
+```text
+[PDF / TXT Docs] 
+      │
+      ▼ (PyPDFLoader / RecursiveTextSplitter)
+[Text Chunks: 500 chars, overlap 50]
+      │
+      ▼ (Local Sentence-Transformers / TF-IDF)
+[Dense Vector Embeddings]
+      │
+      ▼
+[Local ChromaDB Vector Database (./db)]
+```
+
+## Zero-Cloud Retrieval Strategy
+
+When querying the index:
+1. The user inputs a query via standard CLI: `python rag.py query "sustainable agricultural yield"`.
+2. The query is embedded into the same vector space using the local model.
+3. ChromaDB executes an approximate nearest-neighbors (ANN) search via cosine similarity:
+
+```text
+Cosine Similarity = (u · v) / (||u||_2 * ||v||_2)
+```
+
+4. The top $k$ chunks are formatted with source file references, chunk offsets, and confidence scores directly in terminal ANSI colors.
+
+By running entirely within a local virtual environment with local embeddings, sensitive documents remain strictly private with zero network requests.

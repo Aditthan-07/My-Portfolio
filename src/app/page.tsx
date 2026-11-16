@@ -1,3 +1,4 @@
+import ResearchSection from "@/components/section/research-section";
 import { User } from "lucide-react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
@@ -93,6 +94,9 @@ export default function Page() {
             </div>
           </div>
         </section>
+
+        {/* 3. Research & Publications (Pixel Truth Spotlight) */}
+        <ResearchSection />
       </div>
     </main>
   );

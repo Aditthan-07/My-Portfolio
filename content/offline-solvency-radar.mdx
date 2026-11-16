@@ -1,0 +1,38 @@
+---
+title: "Architecting an Offline Solvency Radar & Random Forest Risk Engine"
+publishedAt: "2024-10-10"
+author: "Aditthan J K"
+summary: "Designing a privacy-preserving financial intelligence platform in React Native and FastAPI with Scikit-Learn risk modeling and standalone APK distribution."
+---
+
+Modern wealth management applications routinely require uploading sensitive banking credentials, balance sheets, and tax histories to third-party cloud servers. For many retail investors in emerging markets, this data exposure is a significant barrier.
+
+When building **FinSight AI (Investor App)**, the goal was to provide institutional-grade solvency analysis and portfolio optimization directly on user hardware.
+
+## The 5-Axis Solvency Radar
+
+The core solvency engine evaluates financial health across five orthogonal dimensions:
+
+1. **Debt-to-Income (DTI) Ratio:** Evaluates fixed obligations against verified monthly inflows.
+2. **Liquidity Coverage:** Measures liquid emergency reserves against recurring survival expenses.
+3. **Credit Health:** Evaluates borrowing utilization and repayment consistency.
+4. **Savings Rate:** Assesses discretionary surplus retention over a rolling 12-month window.
+5. **Volatility Buffer:** Stress-tests asset durability against historical market drawdowns.
+
+The engine computes an aggregated Solvency Score between 0 and 100 without transmitting raw figures off-device.
+
+## ML Risk-Adaptive Equities Basket
+
+Rather than applying static 60/40 asset allocations, FinSight AI utilizes a trained **Scikit-Learn Random Forest** classifier. The model takes personal risk tolerance, financial runway, and market benchmark volatility (NIFTY 50) as inputs to construct dynamic equity baskets:
+
+- **Defensive Capital Preservation:** Large-cap equities with low beta and high dividend yields.
+- **Balanced Growth:** Hybrid allocations balancing index funds with sector leaders.
+- **Aggressive Accumulation:** Strategic exposure to high-growth emerging sectors.
+
+## Mobile Architecture & Standalone APK
+
+The mobile client is engineered with **Expo SDK 51** and **React Native 0.74**, utilizing TypeScript for end-to-end type safety. Key architectural decisions include:
+
+- **Local State Sovereignty:** Financial parameters are cached securely in device storage.
+- **RESTful FastAPI Microservice:** Quantitative endpoints provide caching layers for live market data (yfinance) and validation contracts via Pydantic schemas.
+- **Standalone APK Release:** Built through EAS with zero external dependency requirements for core auditing.
