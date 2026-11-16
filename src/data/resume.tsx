@@ -22,7 +22,7 @@ import {
 export const DATA = {
   name: "Aditthan J K",
   initials: "AJK",
-  url: "https://aditthan.dev",
+  url: "https://aditthanjk.vercel.app",
   location: "Madurai / Coimbatore, Tamil Nadu, India",
   locationLink: "https://www.google.com/maps/place/Madurai,+Tamil+Nadu",
   phone: "(+91) 9486244484",

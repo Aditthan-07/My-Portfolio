@@ -4,9 +4,11 @@
 [![React](https://img.shields.io/badge/React-19.2.3-blue?style=for-the-badge&logo=react)](https://react.dev/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.9.3-blue?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-v4-38B2AC?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com/)
+[![Live Website](https://img.shields.io/badge/Live_Website-aditthanjk.vercel.app-success?style=for-the-badge&logo=vercel)](https://aditthanjk.vercel.app)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 
 > **"Built for AI, Wired for Business."**  
+> 🌐 **Live Website:** [https://aditthanjk.vercel.app](https://aditthanjk.vercel.app)  
 > A high-performance, responsive personal developer portfolio showcasing production-ready AI prototypes, full-stack mobile applications, and empirical deep learning research in synthetic media forensics.
 
 ---
