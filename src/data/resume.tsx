@@ -6,6 +6,7 @@ export const DATA = {
   phone: "(+91) 9486244484",
   email: "aditthanjeganathan067@gmail.com",
   positioningPill: "Applied AI & Product Builder • Built for AI, Wired for Business",
+  avatarUrl: "/images/aditthan.jpg",
   contact: {
     email: "aditthanjeganathan067@gmail.com",
     tel: "+919486244484",

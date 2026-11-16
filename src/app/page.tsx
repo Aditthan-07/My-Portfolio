@@ -1,3 +1,4 @@
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import { Github, Linkedin, Mail, FileText, ExternalLink } from "lucide-react";
 import { DATA } from "@/data/resume";
@@ -52,6 +53,18 @@ export default function Page() {
                     </Button>
                   </a>
                 </div>
+              </div>
+
+              {/* Profile Avatar */}
+              <div className="shrink-0">
+                <Avatar className="w-36 h-36 md:w-44 md:h-44 aspect-square rounded-2xl border border-border/60 shadow-sm overflow-hidden bg-muted/30">
+                  <AvatarImage
+                    alt={DATA.name}
+                    src={DATA.avatarUrl}
+                    className="object-cover object-top brightness-105 contrast-105"
+                  />
+                  <AvatarFallback className="font-bold text-2xl">{DATA.initials}</AvatarFallback>
+                </Avatar>
               </div>
             </div>
           </div>
