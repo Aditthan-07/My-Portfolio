@@ -1,3 +1,4 @@
+import ContactSection from "@/components/section/contact-section";
 import SkillsEducationSection from "@/components/section/skills-education-section";
 import ProjectsSection from "@/components/section/projects-section";
 import ResearchSection from "@/components/section/research-section";
@@ -105,6 +106,9 @@ export default function Page() {
 
         {/* 5. Education, Categorized Technical Stack & Coursework */}
         <SkillsEducationSection />
+
+        {/* 6. Contact & Minimal Footer */}
+        <ContactSection />
       </div>
     </main>
   );
