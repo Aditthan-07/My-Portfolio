@@ -1,5 +1,37 @@
 export const DATA = {
-  projects: [],
+  projects: [
+    {id: "finsight-ai",
+      title: "FinSight AI — Personal Solvency & ML Wealth Engine",
+      badge: "Mobile Prototype (WIP)",
+      video: "/projects/finsight-ai.mp4",
+      image: "/projects/finsight-ai.png",
+      description:
+        "A personal wealth management and solvency intelligence platform built for Indian capital markets. Features an offline 5-axis personal solvency audit evaluating debt-to-income, credit health, and emergency reserves without cloud exposure. Uses a trained Scikit-Learn Random Forest model to map user risk tolerance to tailored equity baskets with real-time NIFTY 50 market benchmarks.",
+      technologies: [
+        "React Native",
+        "Expo SDK 51",
+        "FastAPI",
+        "Scikit-Learn",
+        "TypeScript",
+        "Python 3.11",
+        "yfinance",
+      ],
+      links: [
+        {
+          type: "GitHub Repo",
+          href: "https://github.com/Aditthan-07/Investor_App",
+        },
+        {
+          type: "Download Android APK",
+          href: "https://github.com/Aditthan-07/Investor_App/releases/latest",
+        },
+      ],
+      visualSlotLabel: "FinSight AI Mobile App Screenshot / Demo GIF",
+      visualSlotHint: "Upload 1-2 mobile screenshots (e.g. 5-axis solvency radar, equity allocation basket)",
+    },
+    {
+    },
+  ],
   name: "Aditthan J K",
   initials: "AJK",
   url: "https://aditthan.dev",
