@@ -1,4 +1,5 @@
 export const DATA = {
+  projects: [],
   name: "Aditthan J K",
   initials: "AJK",
   url: "https://aditthan.dev",

@@ -1,3 +1,4 @@
+import ProjectsSection from "@/components/section/projects-section";
 import ResearchSection from "@/components/section/research-section";
 import { User } from "lucide-react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
@@ -97,6 +98,9 @@ export default function Page() {
 
         {/* 3. Research & Publications (Pixel Truth Spotlight) */}
         <ResearchSection />
+
+        {/* 4. Projects (Unified 2-Column Desktop Grid) */}
+        <ProjectsSection />
       </div>
     </main>
   );
