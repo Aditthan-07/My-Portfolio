@@ -5,6 +5,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { FlickeringGrid } from "@/components/magicui/flickering-grid";
 import { TopHeader } from "@/components/top-header";
+import Navbar from "@/components/navbar";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://aditthan.dev"),
