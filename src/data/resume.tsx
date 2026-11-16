@@ -172,6 +172,35 @@ export const DATA = {
 
   // Academic Coursework & Proctored Certifications
   
+  certifications: [
+    {
+      title: "Introduction to Large Language Models (LLMs)",
+      issuer: "NPTEL, IIT Madras",
+      period: "Jan 2026 – Apr 2026",
+      type: "Proctored Academic Certification",
+      description:
+        "Studied transformer mathematical foundations, attention mechanisms, prompt structuring, and practical LLM inference & fine-tuning pipelines.",
+    },
+    {
+      title: "IBM Data Analyst Professional Certificate",
+      issuer: "Coursera / IBM",
+      period: "Feb 2025 – Dec 2025",
+      type: "Professional Specialization",
+      description:
+        "Comprehensive training in Python, SQL, exploratory data analysis, and quantitative visualization with a completed capstone project.",
+    },
+    {
+      title: "Data Structures and Algorithms",
+      issuer: "Infosys Springboard",
+      period: "Apr 2025",
+      type: "Technical Certification",
+      description:
+        "Mastered fundamental data structures (arrays, linked lists, binary trees, graphs) and algorithmic problem-solving paradigms.",
+    },
+  ],
+
+  // Focus Areas & What Drives Me (LinkedIn-aligned: Built for AI, Wired for Business)
+  
   projects: [
     {
       id: "finsight-ai",
@@ -357,6 +386,35 @@ export const DATA = {
   ],
 
   // Academic Coursework & Proctored Certifications
+  
+  certifications: [
+    {
+      title: "Introduction to Large Language Models (LLMs)",
+      issuer: "NPTEL, IIT Madras",
+      period: "Jan 2026 – Apr 2026",
+      type: "Proctored Academic Certification",
+      description:
+        "Studied transformer mathematical foundations, attention mechanisms, prompt structuring, and practical LLM inference & fine-tuning pipelines.",
+    },
+    {
+      title: "IBM Data Analyst Professional Certificate",
+      issuer: "Coursera / IBM",
+      period: "Feb 2025 – Dec 2025",
+      type: "Professional Specialization",
+      description:
+        "Comprehensive training in Python, SQL, exploratory data analysis, and quantitative visualization with a completed capstone project.",
+    },
+    {
+      title: "Data Structures and Algorithms",
+      issuer: "Infosys Springboard",
+      period: "Apr 2025",
+      type: "Technical Certification",
+      description:
+        "Mastered fundamental data structures (arrays, linked lists, binary trees, graphs) and algorithmic problem-solving paradigms.",
+    },
+  ],
+
+  // Focus Areas & What Drives Me (LinkedIn-aligned: Built for AI, Wired for Business)
   
   projects: [
     {

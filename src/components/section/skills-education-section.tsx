@@ -54,6 +54,24 @@ export default function SkillsEducationSection() {
           ))}
         </div>
       </section>
+
+      {/* 3. Certifications & Proctored Coursework */}
+      <section id="certifications" className="scroll-mt-16">
+        <div className="flex flex-col gap-y-6">
+          <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-foreground">
+            Certifications &amp; Proctored Coursework
+          </h2>
+          <div className="grid gap-4 sm:grid-cols-3">
+            {DATA.certifications.map((cert) => (
+              <div key={cert.title} className="p-5 rounded-2xl border border-border/80 bg-card space-y-2">
+                <span className="text-[11px] font-bold uppercase tracking-wider text-primary">{cert.issuer}</span>
+                <h3 className="font-bold text-sm sm:text-base text-foreground leading-snug">{cert.title}</h3>
+                <p className="text-xs text-muted-foreground leading-relaxed">{cert.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
