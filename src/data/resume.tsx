@@ -144,6 +144,34 @@ export const DATA = {
   },
 
   // Unified 6 Projects Grid (NO Timelines / Dates)
+  education: [
+    {
+      school: "Sri Krishna College of Technology (SKCT)",
+      href: "https://skct.edu.in",
+      degree: "Bachelor of Engineering (B.E.) in Computer Science & Engineering (AI & ML)",
+      location: "Coimbatore, Tamil Nadu, India",
+      start: "Aug 2024",
+      end: "Mar 2028 (Expected)",
+      grade: "Cumulative GPA: 8.03 / 10.0 (4th Semester)",
+      coreCoursework: [
+        "Data Structures & Algorithms",
+        "Machine Learning",
+        "Deep Learning",
+        "Operating Systems",
+        "Database Management Systems",
+        "Object-Oriented Programming",
+        "Linear Algebra & Probability",
+      ],
+      achievements: [
+        "Authored IEEE-format research paper on Pixel Truth: A Dual-Transformer Ensemble for Synthetic Image Forensics.",
+        "Built end-to-end applied AI systems, offline vector retrieval pipelines, and cross-platform mobile prototypes.",
+        "Completed proctored IIT Madras NPTEL coursework in Large Language Models (transformer mathematics & inference pipelines).",
+      ],
+    },
+  ],
+
+  // Academic Coursework & Proctored Certifications
+  
   projects: [
     {
       id: "finsight-ai",
@@ -301,6 +329,34 @@ export const DATA = {
   ],
 
   // Academic Education (Enriched)
+  
+  education: [
+    {
+      school: "Sri Krishna College of Technology (SKCT)",
+      href: "https://skct.edu.in",
+      degree: "Bachelor of Engineering (B.E.) in Computer Science & Engineering (AI & ML)",
+      location: "Coimbatore, Tamil Nadu, India",
+      start: "Aug 2024",
+      end: "Mar 2028 (Expected)",
+      grade: "Cumulative GPA: 8.03 / 10.0 (4th Semester)",
+      coreCoursework: [
+        "Data Structures & Algorithms",
+        "Machine Learning",
+        "Deep Learning",
+        "Operating Systems",
+        "Database Management Systems",
+        "Object-Oriented Programming",
+        "Linear Algebra & Probability",
+      ],
+      achievements: [
+        "Authored IEEE-format research paper on Pixel Truth: A Dual-Transformer Ensemble for Synthetic Image Forensics.",
+        "Built end-to-end applied AI systems, offline vector retrieval pipelines, and cross-platform mobile prototypes.",
+        "Completed proctored IIT Madras NPTEL coursework in Large Language Models (transformer mathematics & inference pipelines).",
+      ],
+    },
+  ],
+
+  // Academic Coursework & Proctored Certifications
   
   projects: [
     {

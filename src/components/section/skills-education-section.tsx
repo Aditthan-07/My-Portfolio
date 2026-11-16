@@ -33,6 +33,27 @@ export default function SkillsEducationSection() {
           </div>
         </div>
       </section>
+
+      {/* 2. Academic Background (Enriched) */}
+      <section id="education" className="scroll-mt-16">
+        <div className="flex flex-col gap-y-6">
+          <div className="flex items-center gap-2">
+            <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-foreground">
+              Academic Background
+            </h2>
+          </div>
+          <p className="text-sm sm:text-base text-muted-foreground editorial-justify max-w-3xl">
+            Rigorous undergraduate engineering curriculum in computer science and applied artificial intelligence at SKCT Coimbatore.
+          </p>
+          {DATA.education.map((edu) => (
+            <div key={edu.school} className="p-6 sm:p-8 rounded-2xl border border-border/80 bg-card space-y-4">
+              <h3 className="font-bold text-xl text-foreground">{edu.school}</h3>
+              <div className="text-sm sm:text-base text-primary font-semibold">{edu.degree}</div>
+              <div className="text-xs font-mono text-muted-foreground">{edu.start} – {edu.end} • {edu.grade}</div>
+            </div>
+          ))}
+        </div>
+      </section>
     </div>
   );
 }
