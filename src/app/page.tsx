@@ -1,3 +1,4 @@
+import SkillsEducationSection from "@/components/section/skills-education-section";
 import ProjectsSection from "@/components/section/projects-section";
 import ResearchSection from "@/components/section/research-section";
 import { User } from "lucide-react";
@@ -101,6 +102,9 @@ export default function Page() {
 
         {/* 4. Projects (Unified 2-Column Desktop Grid) */}
         <ProjectsSection />
+
+        {/* 5. Education, Categorized Technical Stack & Coursework */}
+        <SkillsEducationSection />
       </div>
     </main>
   );
