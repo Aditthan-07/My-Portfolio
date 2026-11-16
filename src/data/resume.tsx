@@ -1,5 +1,30 @@
 export const DATA = {
   projects: [
+    {id: "aura",
+      title: "Aura — Local-First Habit & Task App",
+      badge: "Mobile Application",
+      video: "/projects/aura.mp4",
+      image: "/projects/aura.jpg",
+      description:
+        "Mobile habit and routine tracking application built with React Native and Expo, engineered around local-first data sovereignty with zero required accounts and automated OS-level advance alarm notifications scheduled 30 minutes before time-bound commitments.",
+      technologies: [
+        "React Native",
+        "Expo SDK",
+        "AsyncStorage",
+        "expo-notifications",
+        "TypeScript",
+      ],
+      links: [
+        {
+          type: "GitHub Repo",
+          href: "https://github.com/Aditthan-07/Aura",
+        },
+      ],
+      visualSlotLabel: "Aura Today & Schedule Mobile Screenshot",
+      visualSlotHint: "Upload mobile screen capture (Today's Agenda or Schedule alarm view)",
+    },
+    {
+    },
     {id: "finsight-ai",
       title: "FinSight AI — Personal Solvency & ML Wealth Engine",
       badge: "Mobile Prototype (WIP)",
