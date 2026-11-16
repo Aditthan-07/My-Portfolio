@@ -1,5 +1,28 @@
 export const DATA = {
   projects: [
+    {id: "slither-king",
+      title: "Slither King — Classic Arcade Game",
+      badge: "Java Desktop Arcade",
+      video: "/projects/slither-king.mp4",
+      description:
+        "Modernized desktop Snake arcade game built in Java with Swing. Implements clean Object-Oriented Architecture, modular game loop managers (movement, collision detection, tunable obstacle generation), and persistent high-score tracking across sessions.",
+      technologies: [
+        "Java",
+        "Java Swing",
+        "OOP Architecture",
+        "State Persistence",
+      ],
+      links: [
+        {
+          type: "GitHub Repo",
+          href: "https://github.com/Aditthan-07/SlitherKing.git",
+        },
+      ],
+      visualSlotLabel: "Slither King Gameplay GIF / Screenshot",
+      visualSlotHint: "Upload desktop gameplay recording or screenshot showing snake movement & obstacle generation",
+    },
+    {
+    },
     {id: "rag-cli",
       title: "RAG-CLI — Offline Semantic Document Retrieval",
       badge: "CLI & Vector Search",
