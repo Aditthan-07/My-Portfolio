@@ -1,3 +1,4 @@
+import { User } from "lucide-react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import { Github, Linkedin, Mail, FileText, ExternalLink } from "lucide-react";
@@ -66,6 +67,29 @@ export default function Page() {
                   <AvatarFallback className="font-bold text-2xl">{DATA.initials}</AvatarFallback>
                 </Avatar>
               </div>
+            </div>
+          </div>
+        </section>
+
+        {/* 2. About Me */}
+        <section id="about" className="scroll-mt-20">
+          <div className="flex min-h-0 flex-col gap-y-4">
+            <div className="flex items-center gap-2">
+              <User className="w-5 h-5 text-primary" />
+              <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-foreground">
+                About Me
+              </h2>
+            </div>
+            <div className="p-6 sm:p-8 rounded-2xl border border-border/80 bg-card hover:border-primary/40 shadow-xs transition-all text-sm sm:text-base text-muted-foreground space-y-4 leading-relaxed">
+              <p className="editorial-justify">
+                I am a <strong className="text-foreground">Pre-Final Year undergraduate</strong> in Computer Science &amp; Engineering (AI &amp; ML) at Sri Krishna College of Technology (SKCT), Coimbatore, maintaining a cumulative GPA of <strong className="text-foreground">8.03 / 10.0</strong>.
+              </p>
+              <p className="editorial-justify">
+                My work spans <strong className="text-foreground">Applied AI, rapid product prototyping, mobile applications, and interactive web builds</strong>, paired with strong product and business intuition. Rather than confining myself to abstract research or isolated code, I focus on building functional systems from scratch—integrating transformer models, local vector databases, and responsive mobile interfaces into live, usable tools that deliver genuine user impact.
+              </p>
+              <p className="editorial-justify">
+                Author of an IEEE-format research paper on <span className="font-editorial-italic font-serif text-foreground font-medium">&ldquo;Pixel Truth: A Dual-Transformer Ensemble for Detecting AI-Generated Images&rdquo;</span>, exploring multi-model vision architectures and explainability. I combine rigorous technical foundations with an agile, vibe-coding workflow to take product ideas from napkin concept to working prototype fast. I am actively seeking software engineering and applied AI internship opportunities where I can build and scale meaningful products.
+              </p>
             </div>
           </div>
         </section>
