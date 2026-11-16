@@ -1,5 +1,29 @@
 export const DATA = {
   projects: [
+    {id: "rag-cli",
+      title: "RAG-CLI — Offline Semantic Document Retrieval",
+      badge: "CLI & Vector Search",
+      video: "/projects/rag-cli.mp4",
+      description:
+        "Terminal-based Retrieval-Augmented Generation system that ingests PDF and TXT files into a local ChromaDB vector store. Executes fast cosine similarity retrieval over local sentence-transformer embeddings without external cloud APIs, recurring token costs, or data leakage.",
+      technologies: [
+        "Python",
+        "LangChain",
+        "ChromaDB",
+        "Sentence-Transformers",
+        "Scikit-Learn",
+      ],
+      links: [
+        {
+          type: "GitHub Repo",
+          href: "https://github.com/Aditthan-07/Rag-CLI",
+        },
+      ],
+      visualSlotLabel: "RAG-CLI Terminal Query Walkthrough",
+      visualSlotHint: "Upload terminal GIF or CLI screen capture showing ingestion and querying",
+    },
+    {
+    },
     {id: "aura",
       title: "Aura — Local-First Habit & Task App",
       badge: "Mobile Application",
