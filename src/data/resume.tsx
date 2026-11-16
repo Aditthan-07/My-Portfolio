@@ -1,5 +1,33 @@
 export const DATA = {
   projects: [
+    {id: "spiderverse",
+      title: "SpiderVerse — 2D Physics Web-Swinging Game",
+      badge: "Interactive Canvas Engine",
+      video: "/projects/spiderverse.mp4",
+      description:
+        "Physics-driven 2D web action game built entirely on native HTML5 Canvas API. Features realistic pendulum web-slinging kinematics, momentum conservation, enemy combat waves, and real-time Spider-Sense visual and audio warning cues.",
+      technologies: [
+        "HTML5 Canvas API",
+        "JavaScript (ES6+)",
+        "Web Audio API",
+        "Physics Kinematics",
+        "Netlify",
+      ],
+      links: [
+        {
+          type: "Live Demo",
+          href: "https://city-slinger.netlify.app",
+        },
+        {
+          type: "GitHub Repo",
+          href: "https://github.com/Aditthan-07/Spiderverse",
+        },
+      ],
+      visualSlotLabel: "SpiderVerse Gameplay GIF / Screenshot",
+      visualSlotHint: "Upload web gameplay animation or canvas combat action screenshot",
+    },
+    {
+    },
     {id: "slither-king",
       title: "Slither King — Classic Arcade Game",
       badge: "Java Desktop Arcade",
