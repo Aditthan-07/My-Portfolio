@@ -1,5 +1,7 @@
 export const DATA = {
   projects: [
+    {
+    },
     {id: "spiderverse",
       title: "SpiderVerse — 2D Physics Web-Swinging Game",
       badge: "Interactive Canvas Engine",
